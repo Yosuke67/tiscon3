@@ -119,7 +119,18 @@
                             <input type="hidden" name="position" th:value="${form.position}"/>
                             <input type="hidden" name="employeeLength" th:value="${form.employeeLength}"/>
 
-                            <button class="ui fluid teal button">次へ（お勤め先情報の入力）</button>
+                            <label>次へ (お客様のお勤め先の有無によってボタンを選択してください)</label>
+                            <div class="ui column grid">
+                                <div class="eight wide column left aligned">
+                                    <button class="ui button angle left icon" onclick="form.action='/cardOrder/';return true">お勤め先がない場合</button>
+                                </div>
+                                <div class="eight wide column right aligned">
+                                    <button class="ui teal button angle right icon">お勤め先がある場合</button>
+                                </div>
+                            </div>
+
+
+
                         </form>
                     </div>
                 </div>
