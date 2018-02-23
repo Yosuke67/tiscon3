@@ -33,7 +33,7 @@
                                 <input type="text" name="employerName" th:value="${form.employerName}"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerZipCode')} ? 'error'">
-                                <label>お勤め先郵便番号</label>
+                                <label>お勤め先郵便番号＜記入例XXX-XXXX＞</label>
                                 <input type="text" name="employerZipCode" th:value="${form.employerZipCode}"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerAddress')} ? 'error'">
@@ -41,7 +41,7 @@
                                 <input type="text" name="employerAddress" th:value="${form.employerAddress}"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerPhoneNumber')} ? 'error'">
-                                <label>お勤め先電話番号</label>
+                                <label>お勤め先電話番号＜記入例XXX-XXXX-XXXX＞</label>
                                 <input type="text" name="employerPhoneNumber" th:value="${form.employerPhoneNumber}"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('industryType')} ? 'error'">

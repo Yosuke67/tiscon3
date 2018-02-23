@@ -47,7 +47,7 @@ public class CardOrderForm extends FormBase {
     private String homePhoneNumber;
 
     @Size(max = 13)
-    @Pattern(regexp = "^((070|080|090)-[0-9]{4}-[0-9]{4})?$")
+    @Pattern(regexp = "^((070|080|090)-[0-9]{4}-[0-9]{4})$")
     private String mobilePhoneNumber;
 
     @NotBlank
