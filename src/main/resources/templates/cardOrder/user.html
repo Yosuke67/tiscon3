@@ -38,7 +38,17 @@
                                 <label>自宅電話番号が正しくありません</label>   </ul>
                             <ul class="ui red basic label" th:if="${form.hasErrors('mobilePhoneNumber')}">
                                 <label>携帯電話番号が正しくありません</label>   </ul>
-                                <div class="ui horizontal divider">ご本人について</div>
+                            <ul class="ui red basic label" th:if="${form.hasErrors('emailaddress')}">
+                                <label>メールアドレスが正しくありません</label>   </ul>
+                            <ul class="ui red basic label" th:if="${form.hasErrors('spouse')}">
+                                <label>配偶者有無の選択が正しくありません</label>   </ul>
+                            <ul class="ui red basic label" th:if="${form.hasErrors('houseClassification')}">
+                                <label>お住いの選択が正しくありません</label>   </ul>
+                            <ul class="ui red basic label" th:if="${form.hasErrors('debt')}">
+                                <label>ローン等の借入金額項目が正しくありません</label>   </ul>
+
+
+                            <div class="ui horizontal divider">ご本人について</div>
 
                             <div class="field" th:classappend="${form.hasErrors('kanjiName')} ? 'error'">
                                 <label>お名前（漢字）</label>
